@@ -32,7 +32,7 @@ contract TodoList {
     // Function that runs the first time that the script start, as a configurator
     constructor() public {
 
-        // Create an default task for the first bot
+        // Create an default task for the first compile
         createTask("Chiamarsi Fra");
         
     }
