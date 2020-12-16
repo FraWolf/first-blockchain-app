@@ -13,27 +13,28 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "signature": "0xb6cb58a5"
     }
   ],
-  "bytecode": "0x608060405260008055348015601357600080fd5b50609e806100226000396000f3fe608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b6cb58a5146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b6000548156fea165627a7a723058208d45c4e3fb0fb11bc92f9e87fde93e9ab3fe9e834b06abcc9df06180dd512df10029",
-  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b6cb58a5146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b6000548156fea165627a7a723058208d45c4e3fb0fb11bc92f9e87fde93e9ab3fe9e834b06abcc9df06180dd512df10029",
-  "sourceMap": "27:179:0:-;;;197:1;173:25;;27:179;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:179:0;;;;;;;",
-  "deployedSourceMap": "27:179:0:-;;;;;;;;;;;;;;;;;;;;;;;;173:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;173:25:0;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "bytecode": "0x608060405260008055348015601357600080fd5b506099806100226000396000f3fe608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a72305820ccc1a341f048e31477075a54ac2e4e630669b9d68ed69f2700fd71a86afe9c430029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a72305820ccc1a341f048e31477075a54ac2e4e630669b9d68ed69f2700fd71a86afe9c430029",
+  "sourceMap": "27:179:1:-;;;197:1;173:25;;27:179;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:179:1;;;;;;;",
+  "deployedSourceMap": "27:179:1:-;;;;;;;;;;;;;;;;;;;;;;;173:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;173:25:1;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TodoList {\r\n\r\n    // Uint => unsigned int\r\n    // public keyboard, to use the variable like a function (ex: this.taskCount() = 0)\r\n\r\n    uint public taskCount = 0;\r\n\r\n\r\n}",
   "sourcePath": "D:/BotDiscord/File Sfusi/GITHUB CLONE/Blockchain To do list/contracts/TodoList.sol",
   "ast": {
     "absolutePath": "/D/BotDiscord/File Sfusi/GITHUB CLONE/Blockchain To do list/contracts/TodoList.sol",
     "exportedSymbols": {
       "TodoList": [
-        5
+        38
       ]
     },
-    "id": 6,
+    "id": 39,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 34,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +42,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -49,20 +50,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5,
+        "id": 38,
         "linearizedBaseContracts": [
-          5
+          38
         ],
         "name": "TodoList",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4,
+            "id": 37,
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
-            "scope": 5,
-            "src": "173:25:0",
+            "scope": 38,
+            "src": "173:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -70,10 +71,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 2,
+              "id": 35,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "173:4:0",
+              "src": "173:4:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -82,14 +83,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 3,
+              "id": 36,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "197:1:0",
+              "src": "197:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -100,24 +101,24 @@
             "visibility": "public"
           }
         ],
-        "scope": 6,
-        "src": "27:179:0"
+        "scope": 39,
+        "src": "27:179:1"
       }
     ],
-    "src": "0:206:0"
+    "src": "0:206:1"
   },
   "legacyAST": {
     "absolutePath": "/D/BotDiscord/File Sfusi/GITHUB CLONE/Blockchain To do list/contracts/TodoList.sol",
     "exportedSymbols": {
       "TodoList": [
-        5
+        38
       ]
     },
-    "id": 6,
+    "id": 39,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 34,
         "literals": [
           "solidity",
           "^",
@@ -125,7 +126,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -133,20 +134,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5,
+        "id": 38,
         "linearizedBaseContracts": [
-          5
+          38
         ],
         "name": "TodoList",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4,
+            "id": 37,
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
-            "scope": 5,
-            "src": "173:25:0",
+            "scope": 38,
+            "src": "173:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -154,10 +155,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 2,
+              "id": 35,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "173:4:0",
+              "src": "173:4:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -166,14 +167,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 3,
+              "id": 36,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "197:1:0",
+              "src": "197:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -184,19 +185,26 @@
             "visibility": "public"
           }
         ],
-        "scope": 6,
-        "src": "27:179:0"
+        "scope": 39,
+        "src": "27:179:1"
       }
     ],
-    "src": "0:206:0"
+    "src": "0:206:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x249103a9C5A6CC93230f7Da866D42591455C33D4",
+      "transactionHash": "0x1ebbcb2a084c1ead1e5e4c763d55ea4ac6582a37f96edaa545729531d83df19c"
+    }
+  },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2020-12-16T15:12:22.290Z",
+  "updatedAt": "2020-12-16T15:23:09.703Z",
   "devdoc": {
     "methods": {}
   },
