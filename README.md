@@ -1,4 +1,4 @@
-# Blockchain to do list
+# Blockchain Todo List
 Hello! This is a very basic project, realised by a guide, that explain what is a Blockchain and what that works with the Web. In this guide there is an explaination of what is and what a Smart Contract do.
 
 Check this out:
