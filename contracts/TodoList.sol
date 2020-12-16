@@ -16,6 +16,13 @@ contract TodoList {
     // Sort of array, the content of tasks (the TASK is an uint)
     mapping(uint => Task) public tasks;
 
+    // Define the TaskCreated event
+    event TaskCreated(
+        uint id, 
+        string content,
+        bool completed
+    );
+
     // Function that runs the first time that the script start, as a configurator
     constructor() public {
 
@@ -32,6 +39,9 @@ contract TodoList {
 
         // Adding to the task array a new task
         tasks[taskCount] = Task(taskCount, _content, false);
+
+        // Emit TaskCreated event
+        emit TaskCreated(taskCount, _content, false);
 
     }
 

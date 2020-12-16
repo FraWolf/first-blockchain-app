@@ -134,6 +134,22 @@ App = {
         }
     },
 
+    createTask: async () => {
+
+        // Set loading state to tru
+        App.setLoading(true);
+
+        // Take the form's value
+        const content = $('#newTask').val();
+
+        // Create the task from the Smart Contract
+        await App.todoList.createTask(content);
+
+        // Reload the page
+        window.location.reload();
+
+    },
+
     setLoading: (boolean) => {
 
         App.loading = boolean;
