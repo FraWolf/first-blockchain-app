@@ -7,7 +7,8 @@
     "dev": "lite-server",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
-    "console": "truffle console"
+    "console": "truffle console",
+    "test": "truffle test"
   },
   "repository": {
     "type": "git",
