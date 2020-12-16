@@ -80,7 +80,7 @@ App = {
             return;
         }
 
-        // Set loading state to tru
+        // Set loading state to true
         App.setLoading(true);
 
         // Render account
@@ -117,7 +117,7 @@ App = {
             $newTaskTemplate.find('input')
                             .prop('name', taskId)
                             .prop('checked', taskCompleted)
-                            //.on('click', App.toggleCompleted);
+                            .on('click', App.toggleCompleted);
 
             // Format the tasks in the correct order
             if(taskCompleted) {
@@ -136,7 +136,7 @@ App = {
 
     createTask: async () => {
 
-        // Set loading state to tru
+        // Set loading state to true
         App.setLoading(true);
 
         // Take the form's value
@@ -144,6 +144,22 @@ App = {
 
         // Create the task from the Smart Contract
         await App.todoList.createTask(content);
+
+        // Reload the page
+        window.location.reload();
+
+    },
+
+    toggleCompleted: async(e) => {
+
+        // Set loading state to true
+        App.setLoading(true);
+
+        // Take the checkbox item id
+        const taskId = e.target.name;
+
+        // Edit the task
+        await App.todoList.toggleCompleted(taskId);
 
         // Reload the page
         window.location.reload();
