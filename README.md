@@ -7,3 +7,35 @@ Check this out:
 - [Original Repository](https://github.com/dappuniversity/eth-todo-list)
 
 Thanks to Gregory, from Dapp University, for this guide. :)
+
+### How does it works
+
+To run this project you need, first of all, to run:
+
+```
+yarn
+```
+
+Then, to start the webserver for the client you need to run:
+
+```
+yarn dev
+```
+
+To compile the Smart Contract run:
+
+```
+yarn compile
+```
+
+To migrate the Smart Contract, when you do an edit, just do:
+
+```
+yarn migrate
+```
+
+And, to open the truffle console do:
+
+```
+yarn console
+```
