@@ -83,7 +83,11 @@ App = {
         // Set loading state to tru
         App.setLoading(true);
 
+        // Render account
         $('#account').html(App.account);
+
+        // Render tasks
+        await App.renderTasks();
 
         // Updating loading state to false
         App.setLoading(false);
@@ -105,18 +109,29 @@ App = {
             const taskContent = task[1];
             const taskCompleted = task[2];
 
+            console.log(taskContent);
+
             // Create the HTML template for the task
             const $newTaskTemplate = $taskTemplate.clone();
-            $newTaskTemplate.find('.content').html(taskContent)
-                            .find('input')
+            $newTaskTemplate.find('.content').html(taskContent);
+            $newTaskTemplate.find('input')
                             .prop('name', taskId)
                             .prop('checked', taskCompleted)
-                            .on('click', App.toggleCompleted);
+                            //.on('click', App.toggleCompleted);
+
+            // Format the tasks in the correct order
+            if(taskCompleted) {
+                // Assign the id #completedTaskList to the template
+                $('#completedTaskList').append($newTaskTemplate);
+            } else {
+                // Assign the #taskList id to the template
+                $('#taskList').append($newTaskTemplate);
+            }
+
+            // Show the task
+            $newTaskTemplate.show();
 
         }
-
-        // Show the task
-
     },
 
     setLoading: (boolean) => {
