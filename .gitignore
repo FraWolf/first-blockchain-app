@@ -2,10 +2,10 @@
 
 /node_modules
 
-# .lock files
+# .lock Files
 
 *.lock
 
-# env
+# Environment
 
 .env
