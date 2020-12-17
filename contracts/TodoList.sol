@@ -33,7 +33,7 @@ contract TodoList {
     constructor() public {
 
         // Create an default task for the first compile
-        createTask("Chiamarsi Fra");
+        createTask("Default task.");
         
     }
 

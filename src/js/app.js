@@ -109,8 +109,6 @@ App = {
             const taskContent = task[1];
             const taskCompleted = task[2];
 
-            console.log(taskContent);
-
             // Create the HTML template for the task
             const $newTaskTemplate = $taskTemplate.clone();
             $newTaskTemplate.find('.content').html(taskContent);
